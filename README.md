@@ -10,5 +10,5 @@ CheckOut Page:![capstone1_checkoutSS](https://github.com/dannydevit0/CapstoneOne
 Register Page:![capstone1_registerSS](https://github.com/dannydevit0/CapstoneOne-Ecommerce/assets/122465014/9470db90-b5d9-43e0-97ce-c03a0a855fe2)
 
 The piece of code I found most interesting was this line from the products page:
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+<code><div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"></code>
 It looks quite complicated but is relatively simple once you break it down; it allows for responsivness between mobile/tablet/and desktop viewports.
