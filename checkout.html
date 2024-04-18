@@ -66,10 +66,11 @@
     <main>
 
         <!-- Centered header -->
-        <div class="container text-center mt-5">
-            <h2>Checkout</h2>
-        </div>
+        <header class="container text-center mt-5">
+            <h1>Checkout</h1>
+        </header>
 
+        <!-- START: container for form -->
         <div class="container">
             <h4 class="mb-3">Billing Address</h4>
             <form novalidate>
@@ -148,21 +149,29 @@
                      <!-- radio buttons for selecting type of payment  -->
                      <h4 class="mb-3">Payments</h4>
 
+                    <!-- credit card radio button -->
                      <div class="form-check">
                         <input id="creditCard" name="paymentMethod" type="radio" class="form-check-input" checked required>
                         <label for="creditCard">Credit Card</label>
                      </div>
 
+                     <!-- debit card radio button  -->
                      <div class="form-check">
                         <input id="debitCard" name="paymentMethod" type="radio" class="form-check-input"checked required>
                         <label for="debitCard">Debit Card</label>
                      </div>
 
+                     <!-- Paypal radio button -->
                      <div class="form-check">
                         <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" checked required>
                         <label for="paypal">PayPal</label>
                      </div>
 
+                     <!-- END: radio buttons for payment meethod -->
+
+
+                     <!-- START: input fields for payment info -->
+                     <!-- input fields for name on card -->
                      <div class="row my-3 gy-3">
                         <div class="col-md-6">               
                             <label for="fullName" class="form-label">
@@ -177,6 +186,7 @@
                             </div>
                         </div>
 
+                        <!-- input fields for cc number -->
                         <div class="col-md-6">
                             <label for="cc-number" class="form-label">
                                 Credit Card Number
@@ -187,6 +197,7 @@
                             </div>                          
                         </div>
    
+                        <!-- input fields for cc info -->
                         <div class="col-md-3">
                             <label for="cc-expire" class="form-label">
                                 Expiration
@@ -208,16 +219,73 @@
                         </div>
                     </div>
 
+                    <!-- END: payment info -->
+
                     <hr class="my-4"> <!-- line break-->  
                     
+
+                    <!-- Button for submitting info -->
+
                     <button class="btn btn-primary btn-block btn-lg">Continue to checkout</button>
 
                 </div>
 
             </form>
         </div>
+        <!-- END: container for form -->
+        <hr class="my-4"> <!-- line break-->  
 
+        <div class="container">
+            <!-- <div class="col-md-5 col-lg-4 order-md-last"> -->
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="text-primary">Your Orders</span>
+                  <span class="badge bg-primary rounded-pill">3</span>
+                </h4>
+                <ul class="list-group mb-3">
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">Instant Darkness Powder</h6>
+                      <small class="text-body-secondary">x1</small>
+                    </div>
+                    <span class="text-body-secondary">$12</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">Love Potion</h6>
+                      <small class="text-body-secondary">x1</small>
+                    </div>
+                    <span class="text-body-secondary">$8</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">Fever Fudge</h6>
+                      <small class="text-body-secondary">x1</small>
+                    </div>
+                    <span class="text-body-secondary">$5</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+                    <div class="text-success">
+                      <h6 class="my-0">Promo code</h6>
+                      <small>EXAMPLECODE</small>
+                    </div>
+                    <span class="text-success">−$5</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">
+                    <span>Total (USD)</span>
+                    <strong>$20</strong>
+                  </li>
+                </ul>
+        
+                <form class="card p-2">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Promo code">
+                    <button type="submit" class="btn btn-secondary">Redeem</button>
+                  </div>
+            </form>
+        </div> 
+       
 
+        <hr class="my-4"> <!-- line break--> 
 
     </main>
     <!-- END: main content -->
