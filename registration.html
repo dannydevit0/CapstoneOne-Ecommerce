@@ -64,11 +64,81 @@
 
 
     <!-- START: main content -->
-    <main>
+    <main class="container">
+
+      <form>
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+        </div>
+      
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+        </div>
+      
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password" required>
+        </div>
+      
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+        </div>
+      
+        <div class="mb-3">
+          <label>How did you hear about us?</label>
+          <div class="row">
+            <div class="col">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="howDidYouHear" id="instagram" value="instagram">
+                <label class="form-check-label" for="instagram">
+                  Instagram
+                </label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="howDidYouHear" id="facebook" value="facebook">
+                <label class="form-check-label" for="facebook">
+                  Facebook
+                </label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="howDidYouHear" id="twitter" value="twitter">
+                <label class="form-check-label" for="twitter">
+                  Twitter
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      
+        <button type="submit" class="btn btn-primary">Register</button>
+      </form>
+      
 
     </main>
     <!-- END: main content -->
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <div class="container">
+      <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="products.html" class="nav-link px-2 text-body-secondary">Products</a></li>
+            <li class="nav-item"><a href="login.html" class="nav-link px-2 text-body-secondary">Log In</a></li>
+            <li class="nav-item"><a href="registration.html" class="nav-link px-2 text-body-secondary">Register</a></li>
+            <li class="nav-item"><a href="checkout.html" class="nav-link px-2 text-body-secondary">Check-Out</a></li>
+          </ul>
+          <p class="text-center text-body-secondary">© Weasleys' Wizard Wheezes, Inc</p>
+        </footer>
+  </div>
+
 </body>
 </html>

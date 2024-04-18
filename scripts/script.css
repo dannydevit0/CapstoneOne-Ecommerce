@@ -4,4 +4,13 @@
     padding: 0;
 }
 
+ /* header styles */
+ .header {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
   
